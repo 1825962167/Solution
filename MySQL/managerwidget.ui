@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManagerWidget</class>
+ <widget class="QMainWindow" name="ManagerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../FramelessWindow/framelesswindow.qrc">
+    <normaloff>:/frameless_images/binoculars.jpg</normaloff>:/frameless_images/binoculars.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>表格</string>
+    </property>
+    <addaction name="actionaction"/>
+    <addaction name="separator"/>
+    <addaction name="actionaction_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionaction_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="exportAction"/>
+    <addaction name="printAction"/>
+   </widget>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+  </widget>
+  <action name="actionaction">
+   <property name="text">
+    <string>检测结果表</string>
+   </property>
+  </action>
+  <action name="actionaction_2">
+   <property name="text">
+    <string>登录日志表</string>
+   </property>
+  </action>
+  <action name="actionaction_3">
+   <property name="text">
+    <string>用户表</string>
+   </property>
+  </action>
+  <action name="exportAction">
+   <property name="text">
+    <string>导出</string>
+   </property>
+  </action>
+  <action name="printAction">
+   <property name="text">
+    <string>打印</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../FramelessWindow/framelesswindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
